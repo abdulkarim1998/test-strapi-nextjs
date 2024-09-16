@@ -24,12 +24,6 @@
         "TextPhotoSide"
       ],
       "default": "TextPhotoSide"
-    },
-    "order": {
-      "type": "integer",
-      "default": 1,
-      "required": true,
-      "min": 1
     }
   }
 }

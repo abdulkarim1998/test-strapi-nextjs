@@ -11,15 +11,6 @@ export interface TextPhotoSideTextPhotoOnSide extends Schema.Component {
     Image: Attribute.Media<'images'> & Attribute.Required;
     ParagraphType: Attribute.Enumeration<['TextPhotoSide']> &
       Attribute.DefaultTo<'TextPhotoSide'>;
-    order: Attribute.Integer &
-      Attribute.Required &
-      Attribute.SetMinMax<
-        {
-          min: 1;
-        },
-        number
-      > &
-      Attribute.DefaultTo<1>;
   };
 }
 
@@ -35,14 +26,6 @@ export interface TextPhotoBelowTextPhotoBelow extends Schema.Component {
     image: Attribute.Media<'images'> & Attribute.Required;
     ParagraphType: Attribute.Enumeration<['TextPhotoBelow']> &
       Attribute.DefaultTo<'TextPhotoBelow'>;
-    order: Attribute.Integer &
-      Attribute.Required &
-      Attribute.SetMinMax<
-        {
-          min: 1;
-        },
-        number
-      >;
   };
 }
 

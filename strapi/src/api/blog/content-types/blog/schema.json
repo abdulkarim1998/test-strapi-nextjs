@@ -16,15 +16,12 @@
       "type": "string",
       "required": true
     },
-    "TextPhotoBelow": {
-      "type": "component",
-      "repeatable": true,
-      "component": "text-photo-below.text-photo-below"
-    },
-    "TextPhotoSide": {
-      "type": "component",
-      "repeatable": true,
-      "component": "text-photo-side.text-photo-on-side"
+    "DynamicZone": {
+      "type": "dynamiczone",
+      "components": [
+        "text-photo-side.text-photo-on-side",
+        "text-photo-below.text-photo-below"
+      ]
     }
   }
 }

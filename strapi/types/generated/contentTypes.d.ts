@@ -375,13 +375,11 @@ export interface ApiBlogBlog extends Schema.CollectionType {
   };
   attributes: {
     title: Attribute.String & Attribute.Required;
-    TextPhotoBelow: Attribute.Component<
-      'text-photo-below.text-photo-below',
-      true
-    >;
-    TextPhotoSide: Attribute.Component<
-      'text-photo-side.text-photo-on-side',
-      true
+    DynamicZone: Attribute.DynamicZone<
+      [
+        'text-photo-side.text-photo-on-side',
+        'text-photo-below.text-photo-below'
+      ]
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
