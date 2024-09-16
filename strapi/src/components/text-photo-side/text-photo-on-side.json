@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_text_photo_side_text_photo_on_sides",
+  "info": {
+    "displayName": "Text Photo on Side",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "text",
+      "required": true
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "ParagraphType": {
+      "type": "enumeration",
+      "enum": [
+        "TextPhotoSide"
+      ],
+      "default": "TextPhotoSide"
+    },
+    "order": {
+      "type": "integer",
+      "default": 1,
+      "required": true,
+      "min": 1
+    }
+  }
+}

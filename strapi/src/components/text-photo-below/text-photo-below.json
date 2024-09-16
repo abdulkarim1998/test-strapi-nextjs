@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_text_photo_below_text_photo_belows",
+  "info": {
+    "displayName": "Text Photo Below",
+    "icon": "arrowDown",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "text",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "ParagraphType": {
+      "type": "enumeration",
+      "enum": [
+        "TextPhotoBelow"
+      ],
+      "required": false,
+      "default": "TextPhotoBelow"
+    },
+    "order": {
+      "type": "integer",
+      "required": true,
+      "min": 1
+    }
+  }
+}

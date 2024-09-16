@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "singularName": "blog",
+    "pluralName": "blogs",
+    "displayName": "blog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "TextPhotoBelow": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text-photo-below.text-photo-below"
+    },
+    "TextPhotoSide": {
+      "type": "component",
+      "repeatable": true,
+      "component": "text-photo-side.text-photo-on-side"
+    }
+  }
+}
